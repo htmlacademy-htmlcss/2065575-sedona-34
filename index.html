@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <img class="logo-SEDONA" width="139" height="70" src="images/header/logohhg.svg" alt="SEDONA">
+      <img class="logo-header" src="images/header/logohhg.svg" alt="SEDONA" width="139" height="70">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-ltem">
@@ -44,8 +45,7 @@
     
     <main class="index">
       <section class="hero">
-        <h1 class="visually-hidden">Седона</h1> 
-        <img class="hero-logo" width="1200" height="485" src="images/main/пейзаш.jpg" alt="пейзаж гор">
+        <h1 class="visually-hidden">Седона</h1>     
         <ul class="hero-list">
           <li class="hero-ltem">
             <img class="logo-WELCOME" width="188" height="45" src="images/main/WELCOME.svg" alt="WELCOME">
@@ -56,26 +56,26 @@
           <li class="hero-ltem">
             <img class="logo-SEDONA" width="458" height="217" src="images/main/SEDONA.svg" alt="SEDONA">
           </li>
+          <li class="hero-ltem">
+            <img class="logo-divider" width="1200" height="57" src="images/main/divider.png" alt="divider">
+          </li>
         </ul>
       </section>
       <section class="divider">
-        <img class="divider" width="1200" height="57" src="images/main/divider.png" alt="divider">
-        <h2 class="divider">Седона — небольшой городок в Аризоне,
+        <h2 class="divider-title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2> 
-        <p class="divider">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p> 
+        <p class="divider-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p> 
       </section>
      
       <section class="advantages">
-        <h2 class="visually-hidden">преимущество</h2>
+        <h1 class="visually-hidden">преимущество</h1>
+        <div class="advantages-background">
+          <h2 class="advantages-title">Настоящий городок</h2>
+          <p class="advantages-description">— №1 —</p>
+          <p class="advantages-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="photo" width="800" height="384" src="images/main/photo-1.jpg" alt="photo">
+        </div>
         <ul class="advantages-list">
-          <li class="advantages-ltem">
-           <h3 class="advantages-title">Настоящий городок</h3>
-           <p class="advantages-description">— №1 —</p>
-           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="velcome-ltem">
-            <img class="photo" width="800" height="384" src="images/main/photo-1.jpg" alt="photo">
-          </li>
           <li class="velcome-ltem">
            <h3 class="visually-hidden">преимушество</h3>
           </li>
@@ -96,14 +96,16 @@
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-description">Не только китайского, 
               но и настоящего местного производства!</p>
-          </li>          
-          <li class="advantages-ltem">
-           <img class="advantages-photo"  width="800" height="384" src="images/main/photo-2.jpg" alt="photo">
-           <h3 class="advantages-title">Там есть
-            мост дьявола</h3>
-           <p class="advantages-description">— №2 —</p>
-           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
+        </ul> 
+        <div class="advantages-background">         
+          <img class="advantages-photo"  width="800" height="384" src="images/main/photo-2.jpg" alt="photo">
+          <h2 class="advantages-title">Там есть
+          мост дьявола</h2>
+          <p class="advantages-description">— №2 —</p>
+          <p class="advantages-description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
+        <ul>
           <li class="advantages-ltem">
            <h3 class="advantages-title">Небольшая
             площадь</h3>
