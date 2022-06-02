@@ -15,8 +15,10 @@
 }
 
 body {
-    margin: 0;
-    padding: 0; 
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -25,24 +27,32 @@ body {
       
 }
 
-.page-header {
+header {
     background-color: #ffffff;
     height: 65px; 
-    margin: 0;
-    padding: 0;
 }
 
-.navigation-link {
-    font-family: "PT Sans", sans-serif;
+.logo {
+    margin-left: 70px;
+}
+
+.navigation-left {
+    width: 390px; 
+    height: 65px;
+    font-family: "PT Sans";
     Font-size: 20px;
     Line-height: 26px;
+    Line-height: 100%;
     font-weight: 700;
-    text-align: center;
     color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
     Font-style: Bold;
-    Vertical-align: Top;
+}
+
+ul.navigation-list li {
+	text-align: center; 
+	display: inline-block; 
+    margin-left: 34px;
+    list-style-type: none;
 }
 
 .button-roctanglo {
@@ -69,6 +79,10 @@ body {
       background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+ul.hero-list li {
+    list-style-type: none;
 }
 
 .divider {
@@ -107,14 +121,9 @@ body {
     width: 230px; 
     height: 200px;
     text-shadow: 4px 0px 4px rgba(0,0,0,0.25);
-    color: #ffffff;
+    color: #ffffff; 
 }
 
-.photo {
-    margin: 50px;
-    padding: 0px;
-}
- 
 .advantages-title { 
     font-family: "PT Sans", sans-serif;
     font-weight: 700; 
@@ -147,4 +156,13 @@ body {
     width: 230px; 
     height: 63px;
     text-align: center;
+}
+
+.advantages-Housing {
+    width: 400px; 
+    height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
+    text-align: center;
+    Font-style: Bold;
+    color: #000000; 
 }
