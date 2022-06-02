@@ -28,46 +28,49 @@ body {
 }
 
 header {
+    margin: 0 auto;
+    min-width: 94%;
+    display: -webkit-flex;
+    display: -ms-inline-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
     background-color: #ffffff;
     height: 65px; 
 }
 
-.logo {
+header .logo {
     margin-left: 70px;
 }
 
-.navigation-left {
-    width: 390px; 
-    height: 65px;
-    font-family: "PT Sans";
-    Font-size: 20px;
-    Line-height: 26px;
-    Line-height: 100%;
-    font-weight: 700;
-    color: #000000;
-    Font-style: Bold;
-}
-
-ul.navigation-list li {
-	text-align: center; 
-	display: inline-block; 
-    margin-left: 34px;
+header .menu-top {
     list-style-type: none;
 }
 
-.button-roctanglo {
-    font-family: "PT Sans", sans-serif;
-    Font-size: 16px;
-    Line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    Font-style: Bold;
-    Vertical-align: Top;
-    
+header .custom-menu-top {
+    list-style-type: none;
 }
+
+header .menu-top-ltem {
+    display: inline-block;
+ }
+
+header .custom-menu-ltem {
+   display: inline-block;
+}
+
+header .menu {
+    display: block;
+    text-decoration: none;
+    Font-family: PT Sans;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    Font-style: Bold;
+    Line-height: 26px;
+    Line-height: 100%;
+ }
 
 .hero {
     margin: 0;
