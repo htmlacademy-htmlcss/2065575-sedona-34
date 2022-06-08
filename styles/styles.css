@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "PT Sans";
+    font-family: "pt sans";
     font-style: normal;
     font-weight: 400;
     src: url("fonts/ptsans-400.woff2")format("woff2");
@@ -7,45 +7,35 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
+    font-family: "pt sans";
     font-style: normal;
     font-weight: 700;
     src: url("fonts/ptsans-700.woff2")format("woff2");
     font-display: swap;
 }
 
-html {
-    height: 100%;
-}
-
 body {
+    width: 1280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 0;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
+    font-family: "pt sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
     color: #000000;
     background-color: #F2F2F2;  
-    min-width: 94%;    
 }
 
-.container {
-   width: 1200px;
-   margin: 0 auto;
-}
-
-.menu-header {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+.header { 
     width: 1200px;
+    margin: 0 auto;
+}
+
+.container {  
+    background-color: #ffffff;
     height: 65px;
-    display: flex; 
+    display: flex;
 }
 
 .logo-header {
@@ -57,26 +47,23 @@ body {
 .navigation-left {
     width: 440px;
     height: 66px;
-    margin: 0 auto;
     margin-left: 30px;  
 }
 
 .navigation-left-top {
-    display: inline-block;
-    display: flex;
+    display: flex; 
     list-style: none;
     padding: 0;
-    margin: 0;
  }
 
 .navigation-left-ltem {
     margin-left: 30px; 
 }
 
-.menu-left {
+.navigation-left-link {
     font-style: normal;
     text-decoration: none;
-    Font-family: PT Sans;
+    font-family: "pt sans" sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 20px;
@@ -91,25 +78,22 @@ body {
 
 .navigation-right-top {
     display: flex;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
  }
 
  .navigation-button {
     width: 160px;
-    padding-right: 15px;
-    padding: 9px;
-    padding-left: 15px;
+    padding: 9px 15px;
     border-radius: 4px;
     background-color: #756157;
     margin-left: 20px;
+    margin-top: -14px;
     text-align: center;
  }
 
 .button {
-    font-style: normal;
-    Font-family: PT Sans;
+    font-family: "pt sans" sans-serif;
     font-weight: 700;
     Font-size: 16px;
     line-height: 20px;
@@ -122,86 +106,123 @@ body {
     flex-grow: 1;
 }
 
+.main-index {
+    display: flex;
+    flex-direction: column;   
+}
+
+.pege-container {
+    background-color: #ffffff; 
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .hero {
-    height: 485px;
+    margin-top: -25px;
+    height: 767px;
     color: #ffffff;
-    background-image: url("../images/main/пейзаш.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    text-align: center;
+    background-image: url("../images/main/пейзаш.jpg"); 
+    background-repeat: no-repeat;  
 }
 
-ul.hero-list li {
-    list-style-type: none;
+.hero-logo-sedona {
+    display: block;
+    margin: 0 auto;
 }
 
-.divider {
-    text-align: center;
-    height: 282px;
+.hero-logo-divider {
+   margin-left: -40px;
+   margin-top: 25px;  
 }
 
-.divider-title {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
+.hero-title {
+    margin: 0 auto;
+    margin-top: 63px;
+    font-family: "pt sans" sans-serif;
+    font-weight: 700; 
+    width: 760px;
+    height: 72px;
+    color: #000;
     Font-size: 30px;
-   
-   
-    Vertical-align: Top;
+    line-height: 36px;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.divider-text {
-    font-family: "PT Sans", sans-serif;
+.hero-text {
+    font-family: "pt sans", sans-serif;
     font-weight: 400;
-    Font-size: 22px;
-   
-    Vertical-align: Top;
+    Font-size: 22px; 
+    line-height: 26px;
+    color: #000;
+    text-align: center;
 }
 
 .advantages {
-    display: flex;  
+    display: flex; 
+    flex-direction: column;  
 }
 
-.advantages-background {
+.advantages-ltem-background {
     width: 400px; 
     height: 384px;
-    background-color: #82B3D3;
+    background-color: #82B3D3;  
+    text-align: center;
+}
+
+.advantages-photo {
+    width: 800px; 
+    height: 384px;
+    margin-left: 400px;
+    margin-top: -384px;
+}
+
+.advantages-list {
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex; 
+    text-align: center;    
 }
 
-.title { 
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700; 
-    font-size: 24px;
-    Line-height: 28px;
-    text-transform: uppercase;
-    width: 230px; 
-    height: 56px;
-} 
-
-.advantages-description{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    Line-height: 21px;
-    width: 230px; 
-    height: 21px;
-  
-    text-shadow: 4px 0px 4px rgba(0,0,0,0.25);
-    color: #ffffff; 
-}
-
-.text {
-    width: 230px; 
-    height: 63px;
-}
-
-.advantages-Housing {
+.advantages-ltem-white {
     width: 400px; 
     height: 384px;
-    background-color: rgba(131, 179, 211, 0.12);
-    text-align: center;
-    color: #000000; 
+    background-color: #FFFFFF;
 }
+
+.advantages-ltem {
+    width: 400px; 
+    height: 384px;
+    list-style: none; 
+    background: rgba(131, 179, 211, 0.12); 
+}
+
+.advantages-icon {
+   margin-top: 80px;
+}
+
+.advantages-title-advantages {
+    font-family: "pt sans" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-text {
+    margin: 0 auto;
+    width: 230px;  
+    font-family: "pt sans" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center; 
+}
+
+.background {
+    margin-left: 800px;
+    margin-top: -384px;
+}
+
