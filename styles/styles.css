@@ -27,6 +27,17 @@ body {
   background-color: #F2F2F2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   width: 1200px;
   margin: 0 auto;
@@ -41,27 +52,23 @@ body {
 .navigation-left {
   display: grid;
   grid-template-columns: 230px 1fr;
-  column-gap: 17px;
-  align-items: center;
 }
 
 .logo-header {
-  width: 139px;
-  height: 70px;
   margin-left: 70px;
 }
 
-.navigation-list-left {
+.navigation-left-list {
+  margin: 0;
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
 }
 
-.navigation-left-ltem {
-  margin-left: 30px;
-}
-
 .navigation-left-link {
+  display: block;
+  padding: 20px 17px;
   font-style: normal;
   text-decoration: none;
   font-family: "pt sans",sans-serif;
@@ -72,35 +79,43 @@ body {
 }
 
 .navigation-right {
-  width: 264px;
-  height: 66px;
-  margin: 0 auto;
+  margin-left: 237px;
 }
 
-.navigation-list-right {
-  display: flex;
-  list-style: none;
+.navigation-right-list {
   padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation-right-ltem {
+  padding: 24px 12px;
+}
+
+.navigation-right-link {
+  min-width: 42px;
+  max-height: 66px;
+}
+
+.number {
+  margin-left: -30px;
+  padding-bottom: 17px;
 }
 
 .navigation-button {
   width: 160px;
-  padding: 9px 15px;
+  margin-top: 14px;
+  height: 37px;
   border-radius: 4px;
   background-color: #756157;
-  margin-left: 20px;
-  margin-top: -14px;
   text-align: center;
 }
 
-.button {
-  font-family: "pt sans",sans-serif;
+.navigation-right-button {
   font-weight: 700;
   Font-size: 16px;
-  line-height: 20px;
   color: #FFFFFF;
-  text-transform: uppercase;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -121,6 +136,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero-list {
+  padding: 0;
+  list-style-type: none;
+}
+
 .hero {
   height: 767px;
 }
@@ -131,8 +151,7 @@ body {
 }
 
 .hero-logo-divider {
-  margin-left: -40px;
-  margin-top: 25px;
+  margin-top: 55px;
 }
 
 .hero-title {
@@ -330,7 +349,8 @@ body {
 }
 
 .main-header {
-  height: 393px;
+  height: 403px;
+  color: #FFFFFF;
 }
 
 .main-header-title {
@@ -338,7 +358,58 @@ body {
   font-weight: 700;
   Font-size: 60px;
   line-height: 70px;
-  color: #FFFFFF;
+  margin-left: 70px;
+  margin-top: 35px;
+}
+
+.form-content-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.form-content-text {
+  font-family: "pt sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter {
+  width: 1060px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.catalog-filter-title {
+  font-family: "pt sans",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.catalog-filter-control {
+  font-family: "pt sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-button-list {
+  list-style-type: none;
+}
+
+.catalog-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .cards-list {
