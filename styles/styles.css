@@ -37,6 +37,7 @@ body {
 .header {
   width: 1200px;
   margin: 0 auto;
+  /* height: 64px; */
 }
 
 .container {
@@ -46,41 +47,48 @@ body {
 
 .navigation-left {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-logo {
   margin-left: 70px;
+  z-index: 2;
 }
 
-.logo-header {
-  width: 130px;
+.navigation-left-list {
+  width: 390px;
+  margin-left: 30px;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 440px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-left: 30px;
 }
 
 .navigation-left-link {
   display: block;
   padding: 20px 17px;
-  font-style: normal;
   text-decoration: none;
-  font-family: "pt sans", sans-serif;
   font-weight: 700;
   color: #000000;
   font-size: 20px;
-  line-height: 26px;
+}
+
+.custom-menu-right-list {
+  width: 264px;
+  margin-left: 237px;
+}
+
+.navigation-right {
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .navigation-right-list {
   display: flex;
-  margin-left: 187px;
 }
 
 .navigation-right-menu {
@@ -122,6 +130,10 @@ body {
 .pege-container {
   background-color: #ffffff;
   margin: 0 auto;
+}
+
+.hero {
+  height: 485px;
   background-image: url("../images/main/пейзаш.jpg");
   background-repeat: no-repeat;
 }
@@ -370,13 +382,10 @@ body {
 }
 
 .main-header {
-  height: 403px;
   color: #FFFFFF;
 }
 
 .main-header-title {
-  font-family: "pt sans", sans-serif;
-  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
   margin-left: 70px;
@@ -384,23 +393,25 @@ body {
 }
 
 .form-content-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form-content-text {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .catalog-filter {
+  margin: 0 auto;
   width: 1060px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-title {
@@ -412,6 +423,8 @@ body {
 }
 
 .catalog-filter-list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -428,9 +441,12 @@ body {
 }
 
 .catalog-products {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+ margin: 0;
+ padding: 0;
+}
+
+.select-control-sorting {
+ display: flex;
 }
 
 .cards-list {
