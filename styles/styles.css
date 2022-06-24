@@ -37,7 +37,6 @@ body {
 .header {
   width: 1200px;
   margin: 0 auto;
-  /* height: 64px; */
 }
 
 .container {
@@ -52,7 +51,7 @@ body {
 
 .navigation-logo {
   margin-left: 70px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navigation-left-list {
@@ -95,10 +94,22 @@ body {
   margin: 23px 11px;
 }
 
-.number {
+.data-count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:  #7DB54F;
   margin-right: 0;
-  margin-left: -19px;
-  margin-top: 15px;
+  margin-left: -16px;
+  margin-top: 14px;
+}
+
+.data-count-text {
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .navigation-button {
@@ -133,7 +144,7 @@ body {
 }
 
 .hero {
-  height: 485px;
+  margin-top: -10px;
   background-image: url("../images/main/пейзаш.jpg");
   background-repeat: no-repeat;
 }
@@ -151,11 +162,8 @@ body {
   margin: 0 auto;
 }
 
-.hero-logo-divider {
-  margin-bottom: 63px;
-}
-
 .hero-title {
+  padding-top: 63px;
   margin: 0 auto;
   width: 760px;
   font-size: 30px;
@@ -165,13 +173,13 @@ body {
 }
 
 .hero-text {
+  padding-top: 31px;
   margin: 0 auto;
   width: 655px;
-  margin-top: 31px;
 }
 
 .advantages {
-  margin-top: 90px;
+  padding-top: 90px;
 }
 
 .advantages-ltem-blok {
@@ -187,16 +195,16 @@ body {
 }
 
 .advantages-title-background {
-  margin-top: 92px;
-  margin-bottom: 30px;
+  padding-top: 92px;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .advantages-text-background {
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -231,10 +239,12 @@ body {
 }
 
 .advantages-icon {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .advantages-title-advantages {
+  margin: 0;
+  padding-top: 30px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -249,9 +259,9 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-text {
+.advantages-text-housing {
   margin: 0 auto;
-  width: 230px;
+  padding: 30px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -268,9 +278,10 @@ body {
   line-height: 21px;
 }
 
-.advantages-text-background-text {
+.advantages-text {
+  padding-top: 30px;
   margin: 0 auto;
-  width: 180px;
+  width: 226px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -294,14 +305,15 @@ body {
 
 .hotel-search-title {
   text-transform: uppercase;
-  margin-bottom: 29px;
-  margin-top: 91px;
+  margin: 0;
+  padding-top: 91px;
 }
 
 .hotel-search-text {
   margin: 0 auto;
   width: 592px;
-  margin-bottom: 56px;
+  padding-top: 29px;
+  padding-bottom: 56px;
 }
 
 .hotel-search-ltem-button {
@@ -328,7 +340,7 @@ body {
 }
 
 .subscride-title {
-  margin-top: 0;
+  margin: 0;
   padding-top: 94px;
   color: #FFFFFF;
   font-size: 30px;
@@ -337,13 +349,11 @@ body {
 }
 
 .subscride-text {
+  padding-top: 29px;
+  padding-bottom: 46px;
   margin: 0 auto;
   color: #FFFFFF;
   width: 475px;
-}
-
-.subscride-form {
-  margin-top: 56px;
 }
 
 .subscride-form-field {
@@ -353,7 +363,9 @@ body {
 }
 
 .subscride-mail {
+  border: 0;
   width: 600px;
+  background: #F2F2F2;
   border-radius: 10px 0px 0px 10px;
   font-family: "pt sans", sans-serif;
   font-size: 18px;
@@ -361,6 +373,7 @@ body {
 }
 
 .button-form {
+  border: 0;
   padding: 12px;
   width: 200px;
   border-radius: 0px 10px 10px 0px;
@@ -373,59 +386,100 @@ body {
   text-transform: uppercase;
 }
 
-.pege-container-catalog {
+.main-containe-catalog {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
-  background-image: url("../images/main/union.jpg");
-  background-repeat: no-repeat;
 }
 
 .main-header {
+  height: 403px;
+  margin-top: -10px;
+  background-image: url("../images/main/union.png");
+  background-repeat: no-repeat;
+}
+
+.filter-content-header{
+  width: 1060px;
+  padding: 30px 70px 70px 70px;
   color: #FFFFFF;
 }
 
 .main-header-title {
+  margin: 0;
   font-size: 60px;
   line-height: 70px;
-  margin-left: 70px;
-  margin-top: 35px;
+}
+
+.form-bredcrubs {
+  width: 110px;
+  padding-top: 10px;
 }
 
 .form-content-list {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form-content-text {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
+.form-content-union {
+  padding-bottom: 2px;
+}
+
 .catalog-filter {
+  padding-top: 40px;
   margin: 0 auto;
-  width: 1060px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.filter-left {
+  width: 366px;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+.catalog-filter-infra {
+  padding: 0;
+  border: 0;
+}
+
 .catalog-filter-title {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
 .catalog-filter-list {
-  padding: 0;
+  padding-top: 30px;
+  padding-left: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.catalog-filter-item {
+  padding-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  padding-bottom: 0;
+}
+
+.filter-right {
+  width: 518px;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-control {
